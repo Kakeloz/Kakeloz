@@ -1,0 +1,14 @@
+[
+	{"id": "peynir", "name": "Peynir Titremesi", "symptoms": ["Peynir görünce tavuk gibi ötüyor", "Sağ ayağı kendi kendine dans ediyor", "Rüyasında hep aynı fırıncıyla kavga ediyor"], "drug": "Ekşi Mayalı Şurup", "complication": "balloon_head"},
+	{"id": "ayna", "name": "Ayna Korkusu", "symptoms": ["Aynada kendine selam veriyor", "Aynayı görünce \"Pardon\" deyip yol veriyor", "Fotoğrafta hep gözleri kapalı çıkıyor"], "drug": "Parlak Damla", "complication": "tremor"},
+	{"id": "ceket", "name": "Ceket Alerjisi", "symptoms": ["Ceket giyince hapşırıyor", "Hapşırınca tavana bakıyor", "Yağmurda kendini şemsiye sanıyor"], "drug": "Pamuklu Pastil", "complication": "inflate"},
+	{"id": "cay", "name": "Çay Hummalı Nöbet", "symptoms": ["Her 3 dakikada \"demlik nerede\" diyor", "Konuşurken kaşıkla karıştırma hareketi yapıyor", "İnce belli bardak görünce selam duruyor"], "drug": "Soğuk Çay Pomadı", "complication": "long_arms"},
+	{"id": "simit", "name": "Simit Kokusu Krizi", "symptoms": ["Sabahları kollarını martı gibi açıyor", "Kimseyle konuşmadan \"susam\" diye mırıldanıyor", "Parmak uçları hep sıcak"], "drug": "Susamlı Merhem", "complication": "ceiling_stick"},
+	{"id": "servis", "name": "Servis Kaçırma Sendromu", "symptoms": ["Her sabah 7.30'da nereye gittiğini bilmeden koşuyor", "Durak görünce el sallıyor", "Kimse yokken \"şoför abi\" diyor"], "drug": "Duraklı Damla", "complication": "robot"},
+	{"id": "temizlik", "name": "Cumartesi Temizlik Nöbeti", "symptoms": ["Misafir gelecek hissedince halıyı kaldırıyor", "Cam silerken ağlıyor", "Evde kimse yokken terlik kontrolü yapıyor"], "drug": "Deterjanlı Tonik", "complication": "shrink"},
+	{"id": "wifi", "name": "Wi-Fi Çekmeme Hastalığı", "symptoms": ["Ayakta durunca sinyali artıyor", "Elini havaya kaldırıp odayı geziyor", "Oturunca \"bağlanıyor...\" diyor"], "drug": "Modem Şurubu", "complication": "long_neck"},
+	{"id": "kuafor", "name": "Kuaför Pişmanlığı", "symptoms": ["Saçına dokunurken iç çekiyor", "Şapkasını hiç çıkarmıyor", "\"Sadece uçlardan\" lafını duyunca titriyor"], "drug": "Saç Boyası Hapı", "complication": "shrink"},
+	{"id": "pazar", "name": "Pazar Pazarlığı Nöbeti", "symptoms": ["Her fiyata \"son fiyat ne\" diyor", "Cebinde hep poşet taşıyor", "Komşuyu görünce fiyat soruyor"], "drug": "Pazarcı Pastili", "complication": "long_arms"},
+	{"id": "halay", "name": "Düğün Halayı Zehirlenmesi", "symptoms": ["Davul sesi duyunca ayakları kendiliğinden oynuyor", "Mendil yoksa çorabını sallıyor", "Asansörde bile halay başı olmaya çalışıyor"], "drug": "Halay Şurubu", "complication": "tremor"},
+	{"id": "ekmek", "name": "Bayat Ekmek Duygusallığı", "symptoms": ["Ekmek atılırken gözleri doluyor", "Kuru ekmek görünce kuşlarla konuşuyor", "Evinde \"hatıra\" diye ekmek torbası saklıyor"], "drug": "Kuru Ekmek Kapsülü", "complication": "inflate"}
+]

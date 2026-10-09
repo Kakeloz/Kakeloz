@@ -1,0 +1,63 @@
+{
+	"title": "MUAYENEHANE",
+	"subtitle": "Herkes hasta, ama sadece biri gerçekten hasta.",
+	"rules_short": "Bekleme odasındaki herkes aynı hastalığı iddia ediyor ama yalnızca biri gerçekten hasta. Gerçek hasta belirtileri biliyor, simülantlar (sahte hastalar) sadece hastalığın adını. Doktor 5 soru sorup gerçek hastayı bulmaya çalışır. Doktor yanılırsa komplikasyon patlar!\n\nBu bir prototip: herkes aynı bilgisayarı sırayla kullanır.",
+	"player_count": "Oyuncu sayısı:",
+	"player_names": "Oyuncu adları:",
+	"start_game": "Oyunu Başlat",
+	"default_player": "Oyuncu %d",
+
+	"header_round": "Tur %d/%d  |  Doktor: %s",
+	"pass_device": "Bilgisayarı %s oyuncusuna ver",
+	"pass_hint": "Diğerleri ekrana bakmasın!",
+	"show_role": "Hazırım, rolümü göster",
+	"hide_and_continue": "Gizle ve sıradakine geç",
+	"hide_and_start": "Gizle ve muayeneyi başlat",
+
+	"role_doctor_title": "Sen DOKTORSUN!",
+	"role_doctor_text": "Bugünkü salgın: %s\n\nTıp Kitabına göre gerçek belirtiler:\n%s\n\nGerçek hastayı bul. Soruların belirtileri ele vermesin, yoksa simülantlar kopya çeker!",
+	"role_real_title": "Sen GERÇEK HASTASIN!",
+	"role_real_text": "Hastalığın: %s\n\nBelirtilerin:\n%s\n\nDoktor seni seçsin, ama simülantlara ipucu verme!",
+	"role_fake_title": "Sen SİMÜLANTSIN!",
+	"role_fake_text": "Hastalık: %s\n\nBelirtileri bilmiyorsun. Uydur, kopya çek, ikna et!\nDoktor seni seçerse bedava rapor senin.",
+	"symptom_line": "- %s",
+
+	"timer": "%d sn",
+	"questions_left": "Kalan soru hakkı: %d",
+	"ask_hint": "Doktor, soru soracağın hastayı seç (parantezde: şimdiye kadar sorulan soru sayısı)",
+	"ask_button": "%s (%d)",
+	"no_questions": "Soru hakkın bitti.",
+	"answering": "%s cevap veriyor...",
+	"answer_done": "Cevap bitti",
+	"end_exam": "Muayeneyi bitir",
+	"book_button": "Tıp Kitabı (basılı tut)",
+	"book_hidden": "(gizli)",
+	"book_text": "%s: %s",
+
+	"discussion_title": "TARTIŞMA",
+	"discussion_hint": "Hastalar birbirini suçlayabilir, doktoru ikna etmeye çalışabilir.",
+	"to_diagnosis": "Teşhise geç",
+
+	"diag_who": "Doktor, kimi tedavi ediyorsun?",
+	"diag_drug": "Hangi ilacı yazıyorsun?",
+	"diag_confirm": "Teşhisi koy",
+	"time_up": "Süre doldu! Hadi doktor, karar ver!",
+
+	"result_correct": "DOĞRU TEŞHİS!",
+	"result_correct_text": "%s gerçekten %s hastasıydı. Doktor işini biliyor!",
+	"result_wrong": "YANLIŞ TEŞHİS!",
+	"result_wrong_text": "%s simülanttı! Gerçek hasta %s idi (%s).\n%s yan etki yaptı: %s!",
+	"result_voice": "Doktorun ve %s oyuncusunun sesi sonraki tur sonuna kadar: %s",
+	"result_scores": "Puanlar: %s",
+	"next_round": "Sonraki tur",
+	"final_scores": "Final skorları",
+
+	"score_line": "Puan: %d",
+	"doctor_tag": "DOKTOR",
+	"voice_line": "Ses: %s",
+
+	"game_over_title": "OYUN BİTTİ",
+	"winner_line": "Kazanan: %s",
+	"rank_line": "%d. %s  -  %d puan",
+	"new_game": "Yeni oyun"
+}

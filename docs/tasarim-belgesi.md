@@ -120,7 +120,7 @@ Her hastalığın 3 belirtisi vardır. Hedef: 30-40 hastalık.
 ## 10. Yol haritası
 
 1. ✅ Tasarım belgesi (bu belge)
-2. Tek bilgisayarda oynanan prototip (şekillerle): rol dağıtımı, tur akışı, teşhis ve komplikasyon
+2. ✅ Tek bilgisayarda oynanan prototip (şekillerle): rol dağıtımı, tur akışı, teşhis ve komplikasyon
 3. Online lobi: oda kodu, rollerin gizli dağıtımı
 4. Ses deneyi: mikrofon + ses efekti
 5. Komplikasyon animasyonları ve cila

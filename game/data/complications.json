@@ -1,0 +1,10 @@
+[
+	{"id": "balloon_head", "name": "Balon Kafa", "voice": "helyum sesi"},
+	{"id": "long_arms", "name": "Uzayan Kol", "voice": "tiz ve titrek ses"},
+	{"id": "ceiling_stick", "name": "Tavana Yapışma", "voice": "yankılı ses"},
+	{"id": "inflate", "name": "Şişme", "voice": "pes ve boğuk ses"},
+	{"id": "tremor", "name": "Titreme Krizi", "voice": "titreşimli ses"},
+	{"id": "robot", "name": "Robot Sendromu", "voice": "robot sesi"},
+	{"id": "long_neck", "name": "Boyun Uzaması", "voice": "hızlandırılmış ses"},
+	{"id": "shrink", "name": "Küçülme", "voice": "cırtlak ses"}
+]
