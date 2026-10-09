@@ -109,7 +109,8 @@ Her hastalığın 3 belirtisi vardır. Hedef: 30-40 hastalık.
 ## 9. Teknik yaklaşım (özet)
 
 - **Motor:** Godot 4 (ücretsiz, masaüstü ve Steam desteği).
-- **Görsel:** 2D. İlk sürümde karakterler basit **şekillerden** (daire, kutu) oluşur. Komplikasyonlar kodla ölçek/konum/açı değiştirilerek üretilir. Çizimler sonradan değiştirilebilir.
+- **Görsel:** 3D, üçüncü şahıs kamera. Oyuncular haritada yürür. İlk sürümde karakterler ve eşyalar basit **şekillerden** (kapsül, küre, kutu) oluşur; komplikasyonlar kodla ölçek/konum/açı değiştirilerek üretilir. Sonra ücretsiz (CC0) hazır modellere (ör. Kenney) geçilebilir.
+- **Harita:** Mahalle kliniği: bekleme salonu, koridor, muayene odası, eczane, WC. Doktor muayene odasında oturur, hastalar bekleme salonunda dolaşıp fısıldaşır.
 - **Ağ mimarisi:** Oyun mantığı tek bir yerde (host) çalışır, her oyuncuya sadece görmesi gereken veri gönderilir (örn. simülant belirtileri hiç görmez).
 - **Ağ katmanı değiştirilebilir olacak:**
   - Erken yayıncı sürümü: Steam olmadan çalışır, oda kodu ile bağlanır (küçük bir sunucu).
@@ -120,12 +121,14 @@ Her hastalığın 3 belirtisi vardır. Hedef: 30-40 hastalık.
 ## 10. Yol haritası
 
 1. ✅ Tasarım belgesi (bu belge)
-2. ✅ Tek bilgisayarda oynanan prototip (şekillerle): rol dağıtımı, tur akışı, teşhis ve komplikasyon
-3. Online lobi: oda kodu, rollerin gizli dağıtımı
-4. Ses deneyi: mikrofon + ses efekti
-5. Komplikasyon animasyonları ve cila
-6. **Yayıncı sürümü:** indirilebilir test sürümü, yayıncılara dağıtım
-7. Steam entegrasyonu, mağaza sayfası, çıkış
+2. ✅ Tek bilgisayarda oynanan 2D kural prototipi (şekillerle): rol dağıtımı, tur akışı, teşhis ve komplikasyon
+3. ✅ 3D klinik haritası ve tek başına yürüme (üçüncü şahıs kamera, 3D komplikasyonlar)
+4. Online: oyuncular aynı haritada birbirini görsün, oda kodu, rollerin gizli dağıtımı
+5. Kuralların 3D haritaya taşınması: muayene odasına çağırma, soru, teşhis
+6. Ses deneyi: yakınlık sesli sohbeti + ses efekti
+7. Komplikasyon animasyonları ve cila
+8. **Yayıncı sürümü:** indirilebilir test sürümü, yayıncılara dağıtım
+9. Steam entegrasyonu, mağaza sayfası, çıkış
 
 ## 11. Yayıncı dağıtım planı
 

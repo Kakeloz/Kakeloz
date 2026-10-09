@@ -22,7 +22,7 @@ func _frames(n: int) -> void:
 
 
 func _run() -> void:
-	var main: Control = load("res://scenes/main.tscn").instantiate()
+	var main: Control = load("res://scenes/prototype_2d.tscn").instantiate()
 	root.add_child(main)
 	await _frames(2)
 

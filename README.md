@@ -9,10 +9,11 @@ Doktor gerçek hastayı bulmaya çalışır; yanılırsa komplikasyon patlar.
 - Tasarım belgesi: [docs/tasarim-belgesi.md](docs/tasarim-belgesi.md)
 - Oyun projesi (Godot 4): [game/](game/)
 
-## Şu anki durum: Prototip v0.1
+## Şu anki durum: 3D yürüme sürümü (v0.2)
 
-Tek bilgisayarda sırayla oynanan (hot-seat) prototip. Amaç: kuralların eğlenceli olup olmadığını denemek.
-Karakterler basit şekillerden oluşuyor, online ve sesli sohbet henüz yok.
+Mahalle kliniği haritasında üçüncü şahıs kamerayla tek başına dolaşabilirsin:
+bekleme salonu, koridor, muayene odası, eczane ve WC. Karakterler basit şekillerden oluşuyor.
+Online ve oyun kuralları henüz 3D'ye taşınmadı (sıradaki adımlar).
 
 ## Nasıl oynarım?
 
@@ -21,16 +22,24 @@ Karakterler basit şekillerden oluşuyor, online ve sesli sohbet henüz yok.
 3. Godot'u aç → **Import** → `game/project.godot` dosyasını seç → **Import & Edit**.
 4. Sağ üstteki **▶ (Play)** düğmesine bas veya **F5**.
 
-## Oyun akışı
+### Kontroller
 
-1. Menüde oyuncu sayısını (5-8) ve isimleri gir.
-2. Her oyuncu sırayla bilgisayarı alıp gizlice rolünü görür (Doktor / Gerçek Hasta / Simülant).
-3. **Muayene:** Doktor 5 soru sorar. Sorular ve cevaplar sesli söylenir, ekranda kime sorulduğu ve süre görünür.
-   Doktor "Tıp Kitabı" düğmesini basılı tutarak gerçek belirtileri görebilir (diğerleri bakmasın!).
-4. **Tartışma:** 30 saniye suçlama ve ikna.
-5. **Teşhis:** Doktor bir hasta ve bir ilaç seçer.
-6. Yanlış teşhiste doktor ve seçilen simülant ilacın yan etkisini yaşar (balon kafa, uzayan kol, şişme...).
-7. Herkes bir kez doktor olunca oyun biter, en çok puan alan kazanır.
+| Tuş | İşlev |
+|-----|-------|
+| W A S D | Yürü |
+| Shift | Koş |
+| Boşluk | Zıpla |
+| Fare | Etrafa bak (önce oyun penceresine tıkla) |
+| 1-8 | Komplikasyon dene (balon kafa, uzayan kol, tavana yapışma, şişme, titreme, robot, uzun boyun, küçülme) |
+| Esc | Fareyi serbest bırak |
+
+Haritadaki diğer karakterler de ara sıra rastgele komplikasyon geçirir.
+
+### 2D kural prototipi
+
+Oyunun kurallarını (roller, muayene, teşhis, puanlama) denemek için ilk 2D prototip hâlâ projede:
+Godot editöründe `scenes/prototype_2d.tscn` dosyasını açıp **F6** ile çalıştır.
+5-8 kişi aynı bilgisayarı sırayla kullanarak oynar.
 
 ## Geliştiriciler için
 
@@ -39,14 +48,17 @@ Testler (Godot komut satırından):
 ```
 godot --headless --path game --import
 godot --headless --path game -s res://tests/test_logic.gd   # kural testleri
-godot --headless --path game -s res://tests/smoke_ui.gd     # arayüzü baştan sona oynatan test
+godot --headless --path game -s res://tests/smoke_ui.gd     # 2D arayüzü baştan sona oynatan test
+godot --path game -s res://tests/smoke_3d.gd                # 3D harita: yürüme, duvarlar, odalar
 ```
 
 Klasörler:
 
 - `game/scripts/game_logic.gd`: Oyun kuralları (arayüzden bağımsız, online sürümde host'ta çalışacak)
-- `game/scripts/main.gd`: Ekranlar ve oyun akışı
-- `game/scripts/character.gd`: Şekillerden karakter ve komplikasyon animasyonları
+- `game/scripts/clinic.gd`: 3D klinik haritası (odalar, eşyalar, NPC'ler, ekran yazıları)
+- `game/scripts/player.gd`: Üçüncü şahıs oyuncu kontrolü ve kamera
+- `game/scripts/character_3d.gd`: Şekillerden 3D karakter, yürüme ve komplikasyon animasyonları
+- `game/scripts/main.gd`, `character.gd`: 2D kural prototipi
 - `game/data/diseases.json`: Hastalıklar, belirtiler, ilaçlar (yeni hastalık eklemek için burayı düzenle)
 - `game/data/complications.json`: Komplikasyonlar ve ses efektleri
 - `game/data/strings_tr.json`: Tüm Türkçe metinler
