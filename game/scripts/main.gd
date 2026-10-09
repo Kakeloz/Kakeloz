@@ -43,7 +43,7 @@ var _asking := -1
 var _selected_patient := -1
 var _selected_drug := -1
 var _confirm_btn: Button
-## Oyuncu sırası -> {"text": ses efekti, "round": verildiği tur}
+## Oyuncu sırası -> ses efekti. Sadece yanlış tedavi edilen hastaya, o tur boyunca.
 var _voice_fx: Dictionary = {}
 
 
@@ -130,9 +130,7 @@ func _start_game() -> void:
 
 func _begin_round() -> void:
 	logic.start_round()
-	for key in _voice_fx.keys():
-		if logic.round_index > _voice_fx[key]["round"] + 1:
-			_voice_fx.erase(key)
+	_voice_fx.clear()
 	for i in characters.size():
 		var ch := characters[i]
 		ch.reset_visuals()
@@ -316,7 +314,7 @@ func _show_result(result: Dictionary) -> void:
 		_bottom_vbox.add_child(_label(Loc.t("result_voice", [_player_name(chosen), comp.get("voice", "?")]), 16))
 		for idx in result["afflicted"]:
 			characters[idx].play_complication(result["complication"])
-			_voice_fx[idx] = {"text": comp.get("voice", "?"), "round": logic.round_index}
+		_voice_fx[result["voice_idx"]] = comp.get("voice", "?")
 		characters[real].play_sad()
 
 	var parts: Array = []
@@ -425,7 +423,7 @@ func _refresh_stage() -> void:
 		if i == logic.doctor_idx:
 			info = Loc.t("doctor_tag") + " | " + info
 		if _voice_fx.has(i):
-			info += "\n" + Loc.t("voice_line", [_voice_fx[i]["text"]])
+			info += "\n" + Loc.t("voice_line", [_voice_fx[i]])
 		characters[i].set_info(info)
 
 

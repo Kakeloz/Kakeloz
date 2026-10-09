@@ -85,7 +85,7 @@ Komplikasyonun türü **yazılan ilaca** göre belirlenir:
 | Boyun Uzaması | Boyun yaylanarak uzar | Hızlandırılmış ses |
 | Küçülme | Karakter minik olur | Cırtlak ses |
 
-Ses efekti **sonraki turun sonuna kadar** sürer. Efekt dinleyen tarafta uygulanır (sunucuya yük binmez).
+**Ses kuralı:** Ses sadece doktor yanlış tedavi ettiğinde değişir ve **sadece yanlış ilacı alan hastanın** sesi değişir (doktorunki değişmez). Etki kısa sürer: sadece o tur boyunca. Efekt dinleyen tarafta uygulanır (sunucuya yük binmez).
 
 ## 8. Örnek hastalıklar (ilk 12)
 
@@ -109,7 +109,9 @@ Her hastalığın 3 belirtisi vardır. Hedef: 30-40 hastalık.
 ## 9. Teknik yaklaşım (özet)
 
 - **Motor:** Godot 4 (ücretsiz, masaüstü ve Steam desteği).
-- **Görsel:** 3D, üçüncü şahıs kamera. Oyuncular haritada yürür. İlk sürümde karakterler ve eşyalar basit **şekillerden** (kapsül, küre, kutu) oluşur; komplikasyonlar kodla ölçek/konum/açı değiştirilerek üretilir. Sonra ücretsiz (CC0) hazır modellere (ör. Kenney) geçilebilir.
+- **Görsel:** 3D, üçüncü şahıs kamera, çizgi film görünümü (siyah kontur + toon gölgelendirme, damalı zeminler, canlı renkler). Karakterler ve eşyalar basit **şekillerden** (kapsül, küre, kutu) oluşur; komplikasyonlar kodla ölçek/konum/açı değiştirilerek üretilir. Sonra ücretsiz (CC0) hazır modellere (ör. Kenney) geçilebilir.
+- **Karakterler:** Kocaman sallanan kafa, oyuncak gözler, rastgele burun/saç/bıyık/kilo/boy ve hasta aksesuarları. Koşarken kollar havada sallanır, inişte ezilip esner.
+- **Kaos:** Hapşırık (E) önündekileri savurur, halay (G), el sallama (Q). Muz kabukları ve kaygan zemin oyuncuyu kaydırıp düşürür. İtilebilir eşyalar (kutular, plaj topları, koniler, ilaç kutuları). NPC'ler kendi kendine dolaşıp aynı hareketleri yapar.
 - **Harita:** Mahalle kliniği: bekleme salonu, koridor, muayene odası, eczane, WC. Doktor muayene odasında oturur, hastalar bekleme salonunda dolaşıp fısıldaşır.
 - **Ağ mimarisi:** Oyun mantığı tek bir yerde (host) çalışır, her oyuncuya sadece görmesi gereken veri gönderilir (örn. simülant belirtileri hiç görmez).
 - **Ağ katmanı değiştirilebilir olacak:**
@@ -122,7 +124,7 @@ Her hastalığın 3 belirtisi vardır. Hedef: 30-40 hastalık.
 
 1. ✅ Tasarım belgesi (bu belge)
 2. ✅ Tek bilgisayarda oynanan 2D kural prototipi (şekillerle): rol dağıtımı, tur akışı, teşhis ve komplikasyon
-3. ✅ 3D klinik haritası ve tek başına yürüme (üçüncü şahıs kamera, 3D komplikasyonlar)
+3. ✅ 3D klinik haritası ve tek başına yürüme: üçüncü şahıs kamera, 3D komplikasyonlar, çizgi film görünümü, komik karakterler, kaos etkileşimleri (hapşırık, halay, muz kabuğu, itilebilir eşyalar)
 4. Online: oyuncular aynı haritada birbirini görsün, oda kodu, rollerin gizli dağıtımı
 5. Kuralların 3D haritaya taşınması: muayene odasına çağırma, soru, teşhis
 6. Ses deneyi: yakınlık sesli sohbeti + ses efekti

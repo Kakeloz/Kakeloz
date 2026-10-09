@@ -9,10 +9,12 @@ Doktor gerçek hastayı bulmaya çalışır; yanılırsa komplikasyon patlar.
 - Tasarım belgesi: [docs/tasarim-belgesi.md](docs/tasarim-belgesi.md)
 - Oyun projesi (Godot 4): [game/](game/)
 
-## Şu anki durum: 3D yürüme sürümü (v0.2)
+## Şu anki durum: Kaotik klinik (v0.3)
 
-Mahalle kliniği haritasında üçüncü şahıs kamerayla tek başına dolaşabilirsin:
-bekleme salonu, koridor, muayene odası, eczane ve WC. Karakterler basit şekillerden oluşuyor.
+Çizgi film görünümlü (kontur çizgili, toon gölgeli) mahalle kliniğinde üçüncü şahıs kamerayla dolaşırsın.
+Her karakter rastgele görünümlü: kocaman sallanan kafa, oyuncak gözler, farklı burun/saç/bıyık,
+hasta aksesuarları (sargı, boyunluk, buz torbası, göz bandı, alçı, termometre, gözlük).
+Muz kabukları, kaygan zeminler, itilebilir eşyalar ve kendi kendine halay çekip hapşıran NPC'ler var.
 Online ve oyun kuralları henüz 3D'ye taşınmadı (sıradaki adımlar).
 
 ## Nasıl oynarım?
@@ -27,13 +29,17 @@ Online ve oyun kuralları henüz 3D'ye taşınmadı (sıradaki adımlar).
 | Tuş | İşlev |
 |-----|-------|
 | W A S D | Yürü |
-| Shift | Koş |
+| Shift | Koş (kollar havada!) |
 | Boşluk | Zıpla |
 | Fare | Etrafa bak (önce oyun penceresine tıkla) |
+| E | Hapşır: önündeki eşyalar ve insanlar savrulur |
+| G | Halay çek (bitene kadar yürüyemezsin) |
+| Q | El salla |
 | 1-8 | Komplikasyon dene (balon kafa, uzayan kol, tavana yapışma, şişme, titreme, robot, uzun boyun, küçülme) |
 | Esc | Fareyi serbest bırak |
 
-Haritadaki diğer karakterler de ara sıra rastgele komplikasyon geçirir.
+Muz kabuklarına ve kaygan zemine basarsan kayıp düşersin. Diğer karakterler de ortalıkta dolaşıp
+hapşırır, halay çeker ve muza basar.
 
 ### 2D kural prototipi
 

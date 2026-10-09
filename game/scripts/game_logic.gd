@@ -148,6 +148,7 @@ func diagnose(patient_idx: int, drug_idx: int) -> Dictionary:
 	var correct := patient_idx == real_patient_idx
 	var deltas := {}
 	var afflicted: Array = []
+	var voice_idx := -1
 	if correct:
 		deltas[doctor_idx] = SCORE_DOCTOR_CORRECT
 		deltas[real_patient_idx] = SCORE_REAL_PATIENT_CORRECT
@@ -155,6 +156,8 @@ func diagnose(patient_idx: int, drug_idx: int) -> Dictionary:
 		deltas[doctor_idx] = SCORE_DOCTOR_WRONG
 		deltas[patient_idx] = SCORE_FAKE_CHOSEN
 		afflicted = [doctor_idx, patient_idx]
+		# Ses sadece yanlış ilacı alan hastada değişir, doktorda değişmez
+		voice_idx = patient_idx
 	for idx in deltas:
 		players[idx]["score"] += deltas[idx]
 	last_result = {
@@ -166,6 +169,7 @@ func diagnose(patient_idx: int, drug_idx: int) -> Dictionary:
 		"drug": drug["drug"],
 		"complication": drug["complication"],
 		"afflicted": afflicted,
+		"voice_idx": voice_idx,
 		"deltas": deltas,
 	}
 	phase = Phase.RESULT

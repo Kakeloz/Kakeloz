@@ -41,7 +41,7 @@
 	"result_correct_text": "%s gerçekten %s hastasıydı. Doktor işini biliyor!",
 	"result_wrong": "YANLIŞ TEŞHİS!",
 	"result_wrong_text": "%s simülanttı! Gerçek hasta %s idi (%s).\n%s yan etki yaptı: %s!",
-	"result_voice": "Doktorun ve %s oyuncusunun sesi sonraki tur sonuna kadar: %s",
+	"result_voice": "Yanlış ilacı alan %s oyuncusunun sesi bu tur boyunca: %s",
 	"result_scores": "Puanlar: %s",
 	"next_round": "Sonraki tur",
 	"final_scores": "Final skorları",
@@ -68,8 +68,14 @@
 	"poster_book": "TIP KİTABI\nKural 1: Herkes yalan söyler.",
 	"poster_pharmacy": "BEDAVA RAPOR\nYOKTUR!",
 	"poster_mirror": "AYNAYA SELAM\nVERMEYİNİZ",
-	"controls_help": "WASD: Yürü   Shift: Koş   Boşluk: Zıpla   Fare: Etrafa bak\n1-8: Komplikasyon dene   Esc: Fareyi serbest bırak",
+	"controls_help": "WASD: Yürü   Shift: Koş   Boşluk: Zıpla   Fare: Etrafa bak\nE: Hapşır   G: Halay çek   Q: El salla   1-8: Komplikasyon dene   Esc: Fareyi bırak",
 	"click_to_play": "Oynamak için tıkla",
 	"complication_toast": "%s!",
-	"complication_voice": "(Ses: %s)"
+	"sign_wet_floor": "DİKKAT!\nKAYGAN ZEMİN",
+	"poster_sneeze": "HAPŞIRIRKEN\nAĞZINIZI KAPATIN\n(lütfen)",
+	"poster_banana": "MUZ YEMEK\nYASAKTIR!",
+	"poster_doctor": "DOKTORUMUZ\nGERÇEK DOKTORDUR*\n*büyük ihtimalle",
+	"poster_queue": "SIRA BEKLEYEN\nHASTA: 99+",
+	"toast_slip": "KAYDIN!",
+	"toast_sneeze": "HAPŞU!"
 }

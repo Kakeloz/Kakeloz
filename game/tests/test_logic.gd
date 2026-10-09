@@ -110,11 +110,13 @@ func _play_full_game(diseases: Array, complications: Array, n: int, seed_value: 
 		if target == logic.real_patient_idx:
 			_expect(result["correct"], "doğru teşhis " + ctx)
 			_expect(result["afflicted"].is_empty(), "doğru teşhiste komplikasyon olmamalı " + ctx)
+			_expect(result["voice_idx"] == -1, "doğru teşhiste kimsenin sesi değişmemeli " + ctx)
 			expected_scores[logic.doctor_idx] += GameLogic.SCORE_DOCTOR_CORRECT
 			expected_scores[logic.real_patient_idx] += GameLogic.SCORE_REAL_PATIENT_CORRECT
 		else:
 			_expect(not result["correct"], "yanlış teşhis " + ctx)
 			_expect(result["afflicted"].size() == 2, "yanlışta doktor+simülant etkilenmeli " + ctx)
+			_expect(result["voice_idx"] == target, "yanlışta sadece tedavi edilenin sesi değişmeli " + ctx)
 			expected_scores[logic.doctor_idx] += GameLogic.SCORE_DOCTOR_WRONG
 			expected_scores[target] += GameLogic.SCORE_FAKE_CHOSEN
 		_expect(logic.complications.has(result["complication"]), "komplikasyon tanımlı olmalı " + ctx)
