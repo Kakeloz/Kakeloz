@@ -10,6 +10,9 @@ const KEYS := {
 	"move_right": [KEY_D, KEY_RIGHT],
 	"jump": [KEY_SPACE],
 	"sprint": [KEY_SHIFT],
+	"sneeze": [KEY_E],
+	"dance": [KEY_G],
+	"wave": [KEY_Q],
 }
 const COMPLICATION_KEYS := 8
 
